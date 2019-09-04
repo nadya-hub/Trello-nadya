@@ -9,6 +9,11 @@ public class BoardCreationTest extends TestBase {
     public void testBoardCreation(){
         Assert.assertTrue(isUserLoggedIn());
 
+      driver.findElement(By.xpath("//span[@name='add']")).click();
+       driver.findElement(By.xpath("//li[1]//button[1]//p[1]")).click();
+        driver.findElement(By.xpath("//input[@placeholder='Add board title']")).sendKeys("ABC");
+        driver.findElement(By.xpath("//button[@class='_3UeOvlU6B5KUnS uj9Ovoj4USRUQz _2MgouXHqRQDP_5']")).click();
+
     }
 
     public boolean isUserLoggedIn() {
@@ -20,10 +25,8 @@ public class BoardCreationTest extends TestBase {
         return driver.findElements(locator).size()>0;
     }
 
-    @Override
-    public void click(By locator) {
-        super.click(locator);
-    }
+
+
 }
 
 
