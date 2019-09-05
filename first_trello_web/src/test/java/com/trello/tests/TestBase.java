@@ -15,19 +15,19 @@ public class TestBase {
     @BeforeMethod
 
     public void setUp() {
-        driver= new ChromeDriver();
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();//max window
 
         openSite("https://trello.com");
-        login("leila231@rambler.ru","12345rambler");
+        login("leila231@rambler.ru", "12345rambler");
 
     }
 
     public void login(String email, String password) {
         click(By.cssSelector("[href='/login']"));
-        type(By.cssSelector("[type=email]"),email);
-        type(By.cssSelector("[type=password]"),password);
+        type(By.cssSelector("[type=email]"), email);
+        type(By.cssSelector("[type=password]"), password);
         click(By.id("login"));
     }
 
@@ -48,11 +48,35 @@ public class TestBase {
     }
 
     @AfterMethod
-    public void tearDown(){
+    public void tearDown() {
         driver.quit();
     }
 
 
+    public boolean isUserLoggedIn() {
+        return isElementPresent(By.cssSelector("[data-test-id='header-member-menu-button']"));
+    }
+
+    public boolean isElementPresent(By locator) {
+        return driver.findElements(locator).size() > 0;
+    }
+
+    public void clickContinueButton() {
+        click(By.cssSelector("[type=submit]"));
+    }
+
+    public void fillTeamCreationForm(String teamName, String description) {
+        type(By.cssSelector("[data-test-id='header-create-team-name-input']"), teamName);
+        type(By.cssSelector("textarea"), description);
+    }
+
+    public void selectCreateTeamFromDropDown() {
+        click(By.cssSelector("[data-test-id='header-create-team-button']"));
+    }
+
+    public void clickOnPlusButtonOnHeader() {
+        click(By.cssSelector("[data-test-id='header-create-menu-button']"));
+    }
 
 }
 
