@@ -12,11 +12,15 @@ public class BoardCreationTest extends TestBase {
         fillBoardCreationForm();
         confirmBoardCreation();
         returnToHome();
+        refreshPage();
         int after= getBoardsCount();
-        Assert.assertEquals(after,before+1);
+       Assert.assertEquals(after,before+1);
 
         Assert.assertTrue(isUserLoggedIn());
 
+    }
+
+    public void refreshPage() {
     }
 
 

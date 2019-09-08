@@ -15,11 +15,17 @@ public class TeamCreationTest extends TestBase {
         clickContinueButton();
         String createdTeamName = getTeamNameFromTeamPage();
         returnToHome();
+        refreshPage();
         int after= getTeamsCount();
         Assert.assertEquals(after,before+1);
         Assert.assertEquals(createdTeamName.toLowerCase(),teamName.toLowerCase());
 
     }
+
+    private void refreshPage() {
+        driver.navigate().refresh();
+    }
+
     @Test
     public void testTeamCreationFromLeftNavMenu() throws InterruptedException {
         int before = getTeamsCount();
@@ -31,7 +37,7 @@ public class TeamCreationTest extends TestBase {
         int after = getTeamsCount();
 
         Assert.assertEquals(after, before+1);
-        Assert.assertEquals(createdTeamName, "h");
+       // Assert.assertEquals(createdTeamName, "h");
     }
 
     public void clickOnPlusButtonOnLeftNavMenu() {

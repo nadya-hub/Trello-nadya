@@ -80,7 +80,8 @@ public class TestBase {
 
     public void returnToHome() throws InterruptedException {
         Thread.sleep(10000);
-        click(By.cssSelector("span[name='house']"));
+        click(By.cssSelector("a[href='/']"));//""
+        click(By.cssSelector("a[href='/']"));
 
     }
 
@@ -120,7 +121,7 @@ public class TestBase {
      }
 
     protected int getBoardsCount() {
-        return driver.findElements(By.xpath("//*[@class=\"board-tile mod-add\"] /../..//li")).size();
+        return driver.findElements(By.xpath("//*[@class='board-tile mod-add'] /../..//li")).size();
     }
 
     public void clickPermanentlyDelete() {
