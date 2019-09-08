@@ -118,5 +118,9 @@ public class TestBase {
     public void clickSettingsButton() {
          click(By.xpath("//div[3]//div[1]//div[2]//a[3] "));
      }
+
+    protected int getBoardsCount() {
+        return driver.findElements(By.xpath("//*[@class=\"board-tile mod-add\"] /../..//li")).size();
+    }
 }
 
