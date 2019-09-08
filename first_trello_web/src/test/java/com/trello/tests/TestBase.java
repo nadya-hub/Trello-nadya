@@ -106,5 +106,17 @@ public class TestBase {
     public void selectCreateBoardFromDropDown() {
          click(By.xpath("//li[1]//button[1]//p[1]"));
      }
+
+    public void clickConfirmButton() {
+         click(By.cssSelector("input[value='Delete Forever']"));
+     }
+
+    public void clickDeleteThisTeam() {
+         click(By.xpath("//span[contains(text(),'Delete this team?')] "));
+     }
+
+    public void clickSettingsButton() {
+         click(By.xpath("//div[3]//div[1]//div[2]//a[3] "));
+     }
 }
 
