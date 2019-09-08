@@ -78,5 +78,33 @@ public class TestBase {
         click(By.cssSelector("[data-test-id='header-create-menu-button']"));
     }
 
+    public void returnToHome() throws InterruptedException {
+        Thread.sleep(10000);
+        click(By.cssSelector("a[href='/']"));
+
+    }
+
+    public int getTeamsCount() {
+        return driver.findElements(By.xpath("//div[@class='_mtkwfAlvk6O3f']/../../..//li")).size();
+    }
+    public void clickXButton(){
+
+    }
+
+    protected String getTeamNameFromTeamPage() {
+        return driver.findElement(By.cssSelector("h1")).getText();
+    }
+
+    public void confirmBoardCreation() {
+        click(By.xpath("//button[@class='_3UeOvlU6B5KUnS uj9Ovoj4USRUQz _2MgouXHqRQDP_5']"));
+     }
+
+    public void fillBoardCreationForm() {
+         driver.findElement(By.xpath("//input[@placeholder='Add board title']")).sendKeys("ABC");
+     }
+
+    public void selectCreateBoardFromDropDown() {
+         click(By.xpath("//li[1]//button[1]//p[1]"));
+     }
 }
 
