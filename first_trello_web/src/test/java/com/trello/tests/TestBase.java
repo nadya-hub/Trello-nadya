@@ -80,7 +80,7 @@ public class TestBase {
 
     public void returnToHome() throws InterruptedException {
         Thread.sleep(10000);
-        click(By.cssSelector("a[href='/']"));
+        click(By.cssSelector("span[name='house']"));
 
     }
 
@@ -122,5 +122,25 @@ public class TestBase {
     protected int getBoardsCount() {
         return driver.findElements(By.xpath("//*[@class=\"board-tile mod-add\"] /../..//li")).size();
     }
+
+    public void clickPermanentlyDelete() {
+          click(By.cssSelector("a[class='quiet js-delete']"));
+      }
+
+    public void clickConfirmClose() {
+          click(By.cssSelector("input[class='js-confirm full negate']"));
+      }
+
+    public void clickCloseBoard() {
+          click(By.cssSelector("a[class='board-menu-navigation-item-link js-close-board']"));
+      }
+
+    public void clickButtonMore() {
+          click(By.cssSelector("a[class='board-menu-navigation-item-link js-open-more']"));
+      }
+
+    public void clickOnTheBoard() {
+          click(By.cssSelector("li[class='boards-page-board-section-list-item']"));
+      }
 }
 
