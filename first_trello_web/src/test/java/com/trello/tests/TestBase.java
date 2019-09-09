@@ -85,7 +85,8 @@ public class TestBase {
 
     }
 
-    public int getTeamsCount() {
+    public int getTeamsCount() throws InterruptedException {
+        Thread.sleep(5000);
         return driver.findElements(By.xpath("//div[@class='_mtkwfAlvk6O3f']/../../..//li")).size();
     }
     public void clickXButton(){
@@ -141,7 +142,7 @@ public class TestBase {
       }
 
     public void clickOnTheBoard() {
-          click(By.cssSelector("li[class='boards-page-board-section-list-item']"));
+          click(By.cssSelector("a[class='board-tile mod-light-background']"));
       }
 }
 

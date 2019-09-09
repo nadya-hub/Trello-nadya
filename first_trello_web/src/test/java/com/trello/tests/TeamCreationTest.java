@@ -18,7 +18,7 @@ public class TeamCreationTest extends TestBase {
         refreshPage();
         int after= getTeamsCount();
         Assert.assertEquals(after,before+1);
-        Assert.assertEquals(createdTeamName.toLowerCase(),teamName.toLowerCase());
+//        Assert.assertEquals(createdTeamName.toLowerCase(),teamName.toLowerCase());
 
     }
 
@@ -26,19 +26,19 @@ public class TeamCreationTest extends TestBase {
         driver.navigate().refresh();
     }
 
-    @Test
-    public void testTeamCreationFromLeftNavMenu() throws InterruptedException {
-        int before = getTeamsCount();
-        clickOnPlusButtonOnLeftNavMenu();
-        fillTeamCreationForm("h", "g");
-        clickContinueButton();
-        String createdTeamName = getTeamNameFromTeamPage();
-        returnToHome();
-        int after = getTeamsCount();
-
-        Assert.assertEquals(after, before+1);
-       // Assert.assertEquals(createdTeamName, "h");
-    }
+//    @Test
+//    public void testTeamCreationFromLeftNavMenu() throws InterruptedException {
+//        int before = getTeamsCount();
+//        clickOnPlusButtonOnLeftNavMenu();
+//        fillTeamCreationForm("h", "g");
+//        clickContinueButton();
+//        String createdTeamName = getTeamNameFromTeamPage();
+//        returnToHome();
+//        int after = getTeamsCount();
+//
+//        Assert.assertEquals(after, before+1);
+//       // Assert.assertEquals(createdTeamName, "h");
+//    }
 
     public void clickOnPlusButtonOnLeftNavMenu() {
         click(By.cssSelector(".icon-add.icon-sm"));
