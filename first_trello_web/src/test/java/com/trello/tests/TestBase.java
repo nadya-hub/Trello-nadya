@@ -3,6 +3,8 @@ package com.trello.tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -78,15 +80,26 @@ public class TestBase {
         click(By.cssSelector("[data-test-id='header-create-menu-button']"));
     }
 
-    public void returnToHome() throws InterruptedException {
-        Thread.sleep(10000);
-        click(By.cssSelector("a[href='/']"));//""
-        click(By.cssSelector("a[href='/']"));
-
+//    public void returnToHome() throws InterruptedException {
+//        Thread.sleep(10000);
+//        click(By.cssSelector("a[href='/']"));//""
+//        click(By.cssSelector("a[href='/']"));
+//
+//    }
+    public void returnToHome() {
+        if(isElementPresent(By.cssSelector("._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVV"))){
+            new WebDriverWait(driver, 15)
+                    .until(ExpectedConditions.stalenessOf(driver.findElement(By.cssSelector("._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVV"))));
+            click(By.cssSelector("a[href='/']"));
+            click(By.cssSelector("a[href='/']"));
+        } else
+            click(By.cssSelector("a[href='/']"));
     }
 
     public int getTeamsCount() throws InterruptedException {
-        Thread.sleep(5000);
+        //Thread.sleep(5000);
+        new WebDriverWait(driver,5)
+                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='_mtkwfAlvk6O3f']/../../..//li")));
         return driver.findElements(By.xpath("//div[@class='_mtkwfAlvk6O3f']/../../..//li")).size();
     }
     public void clickXButton(){
@@ -144,5 +157,9 @@ public class TestBase {
     public void clickOnTheBoard() {
           click(By.cssSelector("a[class='board-tile mod-light-background']"));
       }
+
+    public void refreshPage() {
+         driver.navigate().refresh();
+     }
 }
 
