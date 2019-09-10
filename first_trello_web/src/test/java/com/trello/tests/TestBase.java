@@ -2,11 +2,12 @@ package com.trello.tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import java.util.concurrent.TimeUnit;
 
@@ -14,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class TestBase {
     WebDriver driver;
 
-    @BeforeMethod
+    @BeforeClass
 
     public void setUp() {
         driver = new ChromeDriver();
@@ -49,7 +50,7 @@ public class TestBase {
 
     }
 
-    @AfterMethod
+    @AfterClass
     public void tearDown() {
         driver.quit();
     }
@@ -123,11 +124,13 @@ public class TestBase {
      }
 
     public void clickConfirmButton() {
-         click(By.cssSelector("input[value='Delete Forever']"));
+        click(By.cssSelector(".js-confirm"));
      }
 
     public void clickDeleteThisTeam() {
-         click(By.xpath("//span[contains(text(),'Delete this team?')] "));
+        new WebDriverWait(driver, 10)
+                .until(ExpectedConditions.elementToBeClickable(By.cssSelector(".quiet-button")));
+        click(By.cssSelector(".quiet-button"));
      }
 
     public void clickSettingsButton() {
@@ -135,7 +138,7 @@ public class TestBase {
      }
 
     protected int getBoardsCount() {
-        return driver.findElements(By.xpath("//*[@class='board-tile mod-add'] /../..//li")).size();
+        return driver.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).size()-1;
     }
 
     public void clickPermanentlyDelete() {
@@ -161,5 +164,33 @@ public class TestBase {
     public void refreshPage() {
          driver.navigate().refresh();
      }
-}
+
+    public void clickOnPlusButtonOnLeftNavMenu() {
+        click(By.cssSelector(".icon-add.icon-sm"));
+    }
+
+    public boolean isTherePersonalBoards() {
+        return isElementPresent(By.cssSelector("[data-test-id='header-member-menu-button']"));
+    }
+
+    protected void clickOnMoreButtonInBoardMenu() {
+        WebElement menuButton = driver.findElement(By.cssSelector(".board-header-btn.mod-show-menu"));
+        System.out.println(menuButton.getCssValue("visibility"));
+        if (menuButton.getCssValue("visibility").equals("visible")) {
+            click(By.cssSelector(".mod-show-menu"));
+            click(By.cssSelector(".js-open-more"));
+        } else {
+            click(By.cssSelector(".js-open-more"));
+            menuButton = driver.findElement(By.cssSelector(".board-header-btn.mod-show-menu"));
+            System.out.println(menuButton.getCssValue("visibility"));
+            if (menuButton.getCssValue("visibility").equals("visible")) {
+                click(By.cssSelector(".mod-show-menu"));
+                click(By.cssSelector(".js-open-more"));
+            } else {
+                click(By.cssSelector(".js-open-more"));
+            }
+
+
+        }
+    }}
 

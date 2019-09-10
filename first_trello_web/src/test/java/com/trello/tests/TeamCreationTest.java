@@ -1,6 +1,5 @@
 package com.trello.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -21,10 +20,6 @@ public void isOnHomePage() throws InterruptedException {
         }
 }
 
-    public boolean isTherePersonalBoards() {
-        return isElementPresent(By.cssSelector("[data-test-id='header-member-menu-button']"));
-    }
-
     @Test
     public void testTeamCreationFromButtonOnHeader() throws InterruptedException {
 
@@ -36,29 +31,25 @@ public void isOnHomePage() throws InterruptedException {
         clickContinueButton();
         String createdTeamName = getTeamNameFromTeamPage();
         returnToHome();
-        refreshPage();
+        //refreshPage();
         int after= getTeamsCount();
         Assert.assertEquals(after,before+1);
 //        Assert.assertEquals(createdTeamName.toLowerCase(),teamName.toLowerCase());
 
     }
 
-    //    @Test
-//    public void testTeamCreationFromLeftNavMenu() throws InterruptedException {
-//        int before = getTeamsCount();
-//        clickOnPlusButtonOnLeftNavMenu();
-//        fillTeamCreationForm("h", "g");
-//        clickContinueButton();
-//        String createdTeamName = getTeamNameFromTeamPage();
-//        returnToHome();
-//        int after = getTeamsCount();
-//
-//        Assert.assertEquals(after, before+1);
-//       // Assert.assertEquals(createdTeamName, "h");
-//    }
+        @Test
+    public void testTeamCreationFromLeftNavMenu() throws InterruptedException {
+        int before = getTeamsCount();
+        clickOnPlusButtonOnLeftNavMenu();
+        fillTeamCreationForm("h", "g");
+        clickContinueButton();
+        String createdTeamName = getTeamNameFromTeamPage();
+        returnToHome();
+        int after = getTeamsCount();
 
-    public void clickOnPlusButtonOnLeftNavMenu() {
-        click(By.cssSelector(".icon-add.icon-sm"));
+        Assert.assertEquals(after, before+1);
+       // Assert.assertEquals(createdTeamName, "h");
     }
 
     @Test(enabled = false)
