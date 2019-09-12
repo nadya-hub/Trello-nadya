@@ -18,13 +18,17 @@ public class TestBase {
     @BeforeClass
 
     public void setUp() {
+        init();
+
+    }
+
+    public void init() {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();//max window
 
         openSite("https://trello.com");
         login("leila231@rambler.ru", "12345rambler");
-
     }
 
     public void login(String email, String password) {
@@ -52,6 +56,10 @@ public class TestBase {
 
     @AfterClass
     public void tearDown() {
+        stop();
+    }
+
+    public void stop() {
         driver.quit();
     }
 
