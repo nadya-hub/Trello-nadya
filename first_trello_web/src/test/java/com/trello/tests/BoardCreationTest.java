@@ -9,31 +9,31 @@ public class BoardCreationTest extends TestBase {
 
         @BeforeClass
         public void ensurePreconditionsLogin() {
-            if (!isUserLoggedIn()) {
-                login("leila231@rambler.ru", "12345rambler");
+            if (!app.isUserLoggedIn()) {
+                app.login("leila231@rambler.ru", "12345rambler");
             }
 
         }
         @BeforeMethod
         public void isOnHomePage() throws InterruptedException {
-            if (!isTherePersonalBoards()) {
-                returnToHome();
+            if (!app.isTherePersonalBoards()) {
+                app.returnToHome();
             }
         }
 
         @Test
         public void testBoardCreation() throws InterruptedException {
-            int before = getBoardsCount();
-            clickOnPlusButtonOnHeader();
-            selectCreateBoardFromDropDown();
-            fillBoardCreationForm();
-            confirmBoardCreation();
-            returnToHome();
-            refreshPage();
-            int after = getBoardsCount();
+            int before = app.getBoardsCount();
+            app.clickOnPlusButtonOnHeader();
+            app.selectCreateBoardFromDropDown();
+            app.fillBoardCreationForm();
+            app.confirmBoardCreation();
+            app.returnToHome();
+            app.refreshPage();
+            int after = app.getBoardsCount();
             Assert.assertEquals(after, before );
 
-            Assert.assertTrue(isUserLoggedIn());
+            Assert.assertTrue(app.isUserLoggedIn());
 
         }
    }

@@ -8,32 +8,32 @@ import org.testng.annotations.Test;
 public class BoardDeletionTest extends TestBase {
     @BeforeClass
     public void ensurePreconditionsLogin() {
-        if (!isUserLoggedIn()) {
-            login("leila231@rambler.ru", "12345rambler");
+        if (!app.isUserLoggedIn()) {
+            app.login("leila231@rambler.ru", "12345rambler");
         }
 
     }
     @BeforeMethod
     public void isOnHomePage() throws InterruptedException {
-        if (!isTherePersonalBoards()) {
-            returnToHome();
+        if (!app.isTherePersonalBoards()) {
+            app.returnToHome();
         }
     }
 
     @Test
     public void testDeleteBoard() {
-        int before = getBoardsCount();
-        //while(before>2){
-        clickOnTheBoard();
+        int before = app.getBoardsCount();
+     // while(before>2){
+        app.clickOnTheBoard();
        // clickOnMoreButtonInBoardMenu();
-       clickButtonMore();
-        clickCloseBoard();
-        clickConfirmClose();
-        clickPermanentlyDelete();
-       // before=getBoardsCount();}
-        int after= getBoardsCount();
+       app.clickButtonMore();
+        app.clickCloseBoard();
+        app.clickConfirmClose();
+        app.clickPermanentlyDelete();
+        //before=getBoardsCount();}
+        int after= app.getBoardsCount();
 
         Assert.assertEquals(after,before-1);
-        //Assert.assertTrue(isUserLoggedIn());
+
     }
 }
