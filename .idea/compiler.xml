@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="first_trello_web.main" target="1.8" />
       <module name="first_trello_web.test" target="1.8" />
+      <module name="nadya.first_trello_web.main" target="1.8" />
+      <module name="nadya.first_trello_web.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

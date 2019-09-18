@@ -8,31 +8,31 @@ import org.testng.annotations.Test;
 public class TeamCreationTest extends TestBase {
     @BeforeClass
 public void ensurePreconditionsLogin(){
-        if(!app.isUserLoggedIn()){
-            app.login("leila231@rambler.ru", "12345rambler");
+        if(!app.getSessionHelper().isUserLoggedIn()){
+            app.getSessionHelper().login("leila231@rambler.ru", "12345rambler");
         }
 
 }
 @BeforeMethod
 public void isOnHomePage() throws InterruptedException {
-        if(!app.isTherePersonalBoards()){
-            app.returnToHome();
+        if(!app.getSessionHelper().isTherePersonalBoards()){
+            app.getSessionHelper().returnToHome();
         }
 }
 
     @Test
     public void testTeamCreationFromButtonOnHeader() throws InterruptedException {
 
-        int before = app.getTeamsCount();
-        app.clickOnPlusButtonOnHeader();
-        app.selectCreateTeamFromDropDown();
+        int before = app.getTeamHelper().getTeamsCount();
+        app.getBoardHelper().clickOnPlusButtonOnHeader();
+        app.getTeamHelper().selectCreateTeamFromDropDown();
         String teamName ="qa21-"+ System.currentTimeMillis();
-        app.fillTeamCreationForm(teamName,"Description");
-        app.clickContinueButton();
-        String createdTeamName = app.getTeamNameFromTeamPage();
-        app.returnToHome();
+        app.getTeamHelper().fillTeamCreationForm(teamName,"Description");
+        app.getTeamHelper().clickContinueButton();
+        String createdTeamName = app.getTeamHelper().getTeamNameFromTeamPage();
+        app.getSessionHelper().returnToHome();
         //refreshPage();
-        int after= app.getTeamsCount();
+        int after= app.getTeamHelper().getTeamsCount();
         Assert.assertEquals(after,before+1);
 //        Assert.assertEquals(createdTeamName.toLowerCase(),teamName.toLowerCase());
 
@@ -40,13 +40,13 @@ public void isOnHomePage() throws InterruptedException {
 
         @Test
     public void testTeamCreationFromLeftNavMenu() throws InterruptedException {
-        int before = app.getTeamsCount();
-        app.clickOnPlusButtonOnLeftNavMenu();
-        app.fillTeamCreationForm("h", "g");
-        app.clickContinueButton();
-        String createdTeamName = app.getTeamNameFromTeamPage();
-        app.returnToHome();
-        int after = app.getTeamsCount();
+        int before = app.getTeamHelper().getTeamsCount();
+        app.getTeamHelper().clickOnPlusButtonOnLeftNavMenu();
+        app.getTeamHelper().fillTeamCreationForm("h", "g");
+        app.getTeamHelper().clickContinueButton();
+        String createdTeamName = app.getTeamHelper().getTeamNameFromTeamPage();
+        app.getSessionHelper().returnToHome();
+        int after = app.getTeamHelper().getTeamsCount();
 
         Assert.assertEquals(after, before+1);
        // Assert.assertEquals(createdTeamName, "h");
@@ -54,10 +54,10 @@ public void isOnHomePage() throws InterruptedException {
 
     @Test(enabled = false)
    public void testTeamCuncellCreationFromButtonOnHeader(){
-        app.clickOnPlusButtonOnHeader();
-       app.selectCreateTeamFromDropDown();
-        app.fillTeamCreationForm("QA21","Description");
-        app.clickXButton();
+        app.getBoardHelper().clickOnPlusButtonOnHeader();
+       app.getTeamHelper().selectCreateTeamFromDropDown();
+        app.getTeamHelper().fillTeamCreationForm("QA21","Description");
+
 
 
 
