@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.trello.tests.TeamCreationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-09-16T16:29:51" hostname="LAPTOP-G2K9F2C5" time="46.551">
-  <properties/>
-  <testcase name="testTeamCreationFromButtonOnHeader" classname="com.trello.tests.TeamCreationTest" time="23.334"/>
-  <testcase name="testTeamCreationFromLeftNavMenu" classname="com.trello.tests.TeamCreationTest" time="23.19"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

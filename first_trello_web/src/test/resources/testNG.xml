@@ -5,10 +5,12 @@
 
     <test name="RegressionTrello">
         <classes>
-            <class name="com.trello.tests.TeamCreationTest"/>
-            <class name="com.trello.tests.TeamDeletionTest"/>
-            <class name="com.trello.tests.BoardCreationTest"/>
-            <class name="com.trello.tests.BoardDeletionTest"/>
+            <class name="com.trello.qa.tests.TeamCreationTest"/>
+            <class name="com.trello.qa.tests.TeamDeletionTest"/>
+            <class name="com.trello.qa.tests.BoardCreationTest"/>
+            <class name="com.trello.qa.tests.BoardDeletionTest"/>
+            <class name="com.trello.qa.tests.BoardModificationTests"/>
+            <class name="com.trello.qa.tests.TeamModificationTests"/>
 
         </classes>
     </test>

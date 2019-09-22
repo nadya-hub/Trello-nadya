@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.trello.tests.BoardDeletionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-16T16:30:55" hostname="LAPTOP-G2K9F2C5" time="35.811">
-  <properties/>
-  <testcase name="testDeleteBoard" classname="com.trello.tests.BoardDeletionTest" time="35.811"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

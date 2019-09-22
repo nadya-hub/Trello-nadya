@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.trello.tests.TeamDeletionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-16T16:30:38" hostname="LAPTOP-G2K9F2C5" time="12.553">
-  <properties/>
-  <testcase name="deleteTeamFromLeftNavMenu" classname="com.trello.tests.TeamDeletionTest" time="12.553"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
