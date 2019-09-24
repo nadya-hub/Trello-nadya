@@ -29,8 +29,12 @@ public class BoardHelper extends HelperBase{
         click(By.xpath("//button[@class='_3UeOvlU6B5KUnS uj9Ovoj4USRUQz _2MgouXHqRQDP_5']"));
      }
 
-    public void fillBoardCreationForm(String boardName) {
-         driver.findElement(By.xpath("//input[@placeholder='Add board title']")).sendKeys(boardName);
+    public void fillBoardCreationForm(BoardData board) {
+         driver.findElement(By.xpath("//input[@placeholder='Add board title']")).sendKeys(board.getBoardName());
+        if(isElementPresent(By.cssSelector(".W6rMLOx8U0MrPx"))){
+            click(By.cssSelector(".W6rMLOx8U0MrPx"));
+            click(By.xpath("//nav[@class='SdlcRrTVPA8Y3K']//li[1]"));//no team
+        }
      }
 
     public void selectCreateBoardFromDropDown() {
@@ -123,7 +127,7 @@ public class BoardHelper extends HelperBase{
         clickOnPlusButtonOnHeader();
        selectCreateBoardFromDropDown();
        String boardName ="Hope";
-       fillBoardCreationForm(boardName);
+       fillBoardCreationForm(new BoardData().withBoardName(boardName));
        confirmBoardCreation();
        returnToHome();
        refreshPage();

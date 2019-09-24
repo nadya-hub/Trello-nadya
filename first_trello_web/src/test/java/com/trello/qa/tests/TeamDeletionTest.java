@@ -10,6 +10,8 @@ public class TeamDeletionTest extends TestBase {
             app.getTeamHelper().createTeam();
         }
     }
+
+
     @Test
     public void deleteTeamFromLeftNavMenu() throws InterruptedException {
         int before = app.getTeamHelper().getTeamsCount();
