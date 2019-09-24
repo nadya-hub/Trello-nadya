@@ -24,9 +24,10 @@ public class BoardCreationTest extends TestBase {
         @Test
         public void testBoardCreation() throws InterruptedException {
             int before = app.getBoardHelper().getBoardsCount();
-            app.getBoardHelper().clickOnPlusButtonOnHeader();
+            app.getTeamHelper().clickOnPlusButtonOnHeader();
             app.getBoardHelper().selectCreateBoardFromDropDown();
-            app.getBoardHelper().fillBoardCreationForm();
+            String boardName ="Hope";
+            app.getBoardHelper().fillBoardCreationForm(boardName);
             app.getBoardHelper().confirmBoardCreation();
             app.getBoardHelper().returnToHome();
             app.getSessionHelper().refreshPage();

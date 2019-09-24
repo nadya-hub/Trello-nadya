@@ -1,40 +1,32 @@
 package com.trello.qa.tests;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class BoardDeletionTest extends TestBase {
-    @BeforeClass
-    public void ensurePreconditionsLogin() {
-        if (!app.getSessionHelper().isUserLoggedIn()) {
-            app.getSessionHelper().login("leila231@rambler.ru", "12345rambler");
-        }
-
-    }
     @BeforeMethod
-    public void isOnHomePage() throws InterruptedException {
-        if (!app.getSessionHelper().isTherePersonalBoards()) {
-            app.getSessionHelper().returnToHome();
+    public void preconditions() throws InterruptedException {
+        if(!app.getBoardHelper().isTherePersonalBoards()){
+            app.getBoardHelper().createBoard();
         }
     }
 
     @Test
     public void testDeleteBoard() throws InterruptedException {
         int before = app.getBoardHelper().getBoardsCount();
-     // while(before>2){
-        app.getBoardHelper().clickOnTheBoard();
+      //while(before>2){
+          app.getBoardHelper().clickOnFirstPrivateBoard();
+        Thread.sleep(3000);
        // clickOnMoreButtonInBoardMenu();
        app.getBoardHelper().clickButtonMore();
         app.getBoardHelper().clickCloseBoard();
         app.getBoardHelper().clickConfirmClose();
-
         app.getBoardHelper().clickPermanentlyDelete();
-        //before=getBoardsCount();}
+        app.getBoardHelper().returnToHome();
+       //before=app.getBoardHelper().getBoardsCount();}
         int after= app.getBoardHelper().getBoardsCount();
-
-        Assert.assertEquals(after,before-1);
+   Assert.assertEquals(after,before-1);
 
     }
 }

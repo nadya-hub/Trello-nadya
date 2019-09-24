@@ -2,7 +2,6 @@ package com.trello.qa.helpers;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class TeamHelper extends HelperBase{
 
@@ -12,10 +11,11 @@ public class TeamHelper extends HelperBase{
     public void clickContinueButton() {
         click(By.cssSelector("[type=submit]"));
     }
-    public void fillTeamCreationForm(String teamName, String description) {
-        type(By.cssSelector("[data-test-id='header-create-team-name-input']"), teamName);
-        type(By.cssSelector("textarea"), description);
+    public void fillTeamCreationForm(TeamData team) {
+        type(By.cssSelector("[data-test-id='header-create-team-name-input']"), team.getTeamName());
+        type(By.cssSelector("textarea"), team.getDescription());
     }
+
 
     public void selectCreateTeamFromDropDown() throws InterruptedException {
         Thread.sleep(5000);
@@ -56,27 +56,10 @@ public class TeamHelper extends HelperBase{
     public void clickOnPlusButtonOnLeftNavMenu() {
         click(By.cssSelector(".icon-add.icon-sm"));
     }
-
-    protected void clickOnMoreButtonInBoardMenu() {
-        WebElement menuButton = driver.findElement(By.cssSelector(".board-header-btn.mod-show-menu"));
-        System.out.println(menuButton.getCssValue("visibility"));
-        if (menuButton.getCssValue("visibility").equals("visible")) {
-            click(By.cssSelector(".mod-show-menu"));
-            click(By.cssSelector(".js-open-more"));
-        } else {
-            click(By.cssSelector(".js-open-more"));
-            menuButton = driver.findElement(By.cssSelector(".board-header-btn.mod-show-menu"));
-            System.out.println(menuButton.getCssValue("visibility"));
-            if (menuButton.getCssValue("visibility").equals("visible")) {
-                click(By.cssSelector(".mod-show-menu"));
-                click(By.cssSelector(".js-open-more"));
-            } else {
-                click(By.cssSelector(".js-open-more"));
-            }
-
-
-        }
+    public void clickOnPlusButtonOnHeader() {
+        click(By.cssSelector("[data-test-id='header-create-menu-button']"));
     }
+
 
     public void initEditTeamProfile() {
        // waitForElementAndClick(By.cssSelector(".js-edit-profile"));
@@ -91,5 +74,23 @@ public class TeamHelper extends HelperBase{
     public void confirmEditTeam() {
         click(By.cssSelector(".js-submit-profile"));
 
+    }
+
+    public boolean isTeamsPresent() throws InterruptedException {
+       return getTeamsCount()>0;
+    }
+
+
+    public void createTeam() throws InterruptedException {
+        clickOnPlusButtonOnHeader();
+        selectCreateTeamFromDropDown();
+        String teamName = "qa21-" + System.currentTimeMillis();
+        fillTeamCreationForm(new TeamData().withTeamName(teamName).withDescription("Description"));
+        clickContinueButton();
+       returnToHomePage();
+    }
+
+    private void returnToHomePage() {
+        click(By.cssSelector("a[href='/']"));
     }
 }

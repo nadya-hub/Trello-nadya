@@ -1,24 +1,15 @@
 package com.trello.qa.tests;
 
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class TeamDeletionTest extends TestBase {
     @BeforeClass
-    public void ensurePreconditionsLogin() {
-        if (!app.getSessionHelper().isUserLoggedIn()) {
-            app.getSessionHelper().login("leila231@rambler.ru", "12345rambler");
-        }
-
-    }
-    @BeforeMethod
-    public void isOnHomePage() throws InterruptedException {
-        if (!app.getSessionHelper().isTherePersonalBoards()) {
-            app.getSessionHelper().returnToHome();
+    public void preconditions() throws InterruptedException {
+        if(!app.getTeamHelper().isTeamsPresent()){
+            app.getTeamHelper().createTeam();
         }
     }
-
     @Test
     public void deleteTeamFromLeftNavMenu() throws InterruptedException {
         int before = app.getTeamHelper().getTeamsCount();
