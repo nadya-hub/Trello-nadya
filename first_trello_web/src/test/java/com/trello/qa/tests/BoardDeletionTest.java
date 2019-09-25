@@ -13,6 +13,7 @@ public class BoardDeletionTest extends TestBase {
 
     @Test
     public void testDeleteBoard() throws InterruptedException {
+        Thread.sleep(3000);
         int before = app.getBoardHelper().getBoardsCount();
       while(before>2){
           app.getBoardHelper().clickOnFirstPrivateBoard();
