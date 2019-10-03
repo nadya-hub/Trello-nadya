@@ -1,5 +1,6 @@
 package com.trello.qa.helpers;
 
+import com.trello.qa.model.TeamData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -31,7 +32,8 @@ public class TeamHelper extends HelperBase{
         return driver.findElements(By.xpath("//div[@class='_mtkwfAlvk6O3f']/../../..//li")).size();
     }
 
-    public String getTeamNameFromTeamPage() {
+    public String getTeamNameFromTeamPage() throws InterruptedException {
+        Thread.sleep(3000);
         return driver.findElement(By.cssSelector("h1")).getText();
     }
 
@@ -92,5 +94,9 @@ public class TeamHelper extends HelperBase{
 
     private void returnToHomePage() {
         click(By.cssSelector("a[href='/']"));
+    }
+
+    public void clickcXButton() {
+        click(By.xpath("//button[@class='qb90FI2uVIybRy _2b_HpRl1Tyl1YK']//span[@name='close'] "));
     }
 }

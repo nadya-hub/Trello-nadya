@@ -1,6 +1,6 @@
 package com.trello.qa.tests;
 
-import com.trello.qa.helpers.BoardData;
+import com.trello.qa.model.BoardData;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -54,7 +54,7 @@ public class BoardCreationTest extends TestBase {
             }
         }
 
-        @Test
+        @Test()
         public void testBoardCreation() throws InterruptedException {
             int before = app.getBoardHelper().getBoardsCount();
             app.getTeamHelper().clickOnPlusButtonOnHeader();
@@ -87,9 +87,9 @@ public class BoardCreationTest extends TestBase {
        // Assert.assertTrue(app.getSessionHelper().isUserLoggedIn());
 
     }
-    @Test(dataProvider ="validBoards")
-    public void testBoardCreationWithDataProviderFromcsv(String boardName) throws InterruptedException {
-        BoardData board = new BoardData().withBoardName(boardName);
+    @Test(dataProvider ="validBoardsfromcsv")
+    public void testBoardCreationWithDataProviderFromcsv(BoardData board) throws InterruptedException {
+       // BoardData board = new BoardData().withBoardName(boardName);
         int before = app.getBoardHelper().getBoardsCount();
         app.getTeamHelper().clickOnPlusButtonOnHeader();
         app.getBoardHelper().selectCreateBoardFromDropDown();

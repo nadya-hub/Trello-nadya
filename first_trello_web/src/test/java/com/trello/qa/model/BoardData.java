@@ -1,4 +1,4 @@
-package com.trello.qa.helpers;
+package com.trello.qa.model;
 
 public class BoardData {
     private  String boardName;

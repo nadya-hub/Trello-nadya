@@ -1,13 +1,16 @@
 package com.trello.qa.tests;
 
-import com.trello.qa.helpers.TeamData;
+import com.trello.qa.model.TeamData;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -63,7 +66,9 @@ public class TeamCreationTest extends TestBase {
         String teamName = "qa21-" + System.currentTimeMillis();
         app.getTeamHelper().fillTeamCreationForm(new TeamData().withTeamName(teamName).withDescription("Description"));
         app.getTeamHelper().clickContinueButton();
-        String createdTeamName = app.getTeamHelper().getTeamNameFromTeamPage();
+        Thread.sleep(3000);
+        app.getTeamHelper().clickcXButton();
+       // String createdTeamName = app.getTeamHelper().getTeamNameFromTeamPage();
         app.getSessionHelper().returnToHome();
         //refreshPage();
         int after = app.getTeamHelper().getTeamsCount();
@@ -77,7 +82,9 @@ public class TeamCreationTest extends TestBase {
         app.getTeamHelper().clickOnPlusButtonOnLeftNavMenu();
         app.getTeamHelper().fillTeamCreationForm(new TeamData().withTeamName("h").withDescription("u"));
         app.getTeamHelper().clickContinueButton();
-        String createdTeamName = app.getTeamHelper().getTeamNameFromTeamPage();
+        Thread.sleep(3000);
+        app.getTeamHelper().clickcXButton();
+        //String createdTeamName = app.getTeamHelper().getTeamNameFromTeamPage();
         app.getSessionHelper().returnToHome();
         int after = app.getTeamHelper().getTeamsCount();
 
@@ -94,8 +101,7 @@ public class TeamCreationTest extends TestBase {
         //Assert.assertTrue(isUserLoggedIn());
 
     }
-
-        @Test(dataProvider ="validTeams" )
+    @Test(dataProvider ="validTeams" )
     public void testTeamCreationFromButtonOnHeaderWithDataProvider(String teamName, String description) throws InterruptedException {
         TeamData team= new TeamData().withTeamName(teamName).withDescription(description);
         int before = app.getTeamHelper().getTeamsCount();
@@ -104,26 +110,31 @@ public class TeamCreationTest extends TestBase {
       //  String teamName ="qa21-"+ System.currentTimeMillis();
         app.getTeamHelper().fillTeamCreationForm(team);
         app.getTeamHelper().clickContinueButton();
-        String createdTeamName = app.getTeamHelper().getTeamNameFromTeamPage();
+        Thread.sleep(3000);
+        app.getTeamHelper().clickcXButton();
+       // String createdTeamName = app.getTeamHelper().getTeamNameFromTeamPage();
         app.getSessionHelper().returnToHome();
         //refreshPage();
        // int after= app.getTeamHelper().getTeamsCount();
-      //  Assert.assertEquals(after,before+1); }
-//    @Test(dataProvider = "validTeamsfromcsv")
-//    public void testTeamCreationFromButtonOnHeaderWithDataProviderFromcsv(TeamData team) throws InterruptedException {
-//        TeamData team = new TeamData().withTeamName(teamName).withDescription(description);
-//        int before = app.getTeamHelper().getTeamsCount();
-//        app.getTeamHelper().clickOnPlusButtonOnHeader();
-//        app.getTeamHelper().selectCreateTeamFromDropDown();
-//        app.getTeamHelper().fillTeamCreationForm(team);
-//        app.getTeamHelper().clickContinueButton();
-//        //String createdTeamName = app.getTeamHelper().getTeamNameFromTeamPage();
-//        app.getSessionHelper().returnToHome();
-//        //refreshPage();
-//        int after = app.getTeamHelper().getTeamsCount();
-//        Assert.assertEquals(after, before + 1);
-//    }
+      //  Assert.assertEquals(after,before+1);
+            }
+        @Test(dataProvider = "validTeamsfromcsv")
+    public void testTeamCreationFromButtonOnHeaderWithDataProviderFromcsv(TeamData team) throws InterruptedException {
+      //  TeamData team = new TeamData().withTeamName(teamName).withDescription(description);
+        int before = app.getTeamHelper().getTeamsCount();
+        app.getTeamHelper().clickOnPlusButtonOnHeader();
+        app.getTeamHelper().selectCreateTeamFromDropDown();
+        app.getTeamHelper().fillTeamCreationForm(team);
+        app.getTeamHelper().clickContinueButton();
+            Thread.sleep(3000);
+            app.getTeamHelper().clickcXButton();
+        //String createdTeamName = app.getTeamHelper().getTeamNameFromTeamPage();
+        app.getSessionHelper().returnToHome();
+        //refreshPage();
+        int after = app.getTeamHelper().getTeamsCount();
+        Assert.assertEquals(after, before + 1);
+    }
 
-}}
+}
 
 
