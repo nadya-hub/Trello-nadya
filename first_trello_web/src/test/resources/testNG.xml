@@ -9,8 +9,6 @@
             <class name="com.trello.qa.tests.TeamDeletionTest"/>
             <class name="com.trello.qa.tests.BoardCreationTest"/>
             <class name="com.trello.qa.tests.BoardDeletionTest"/>
-            <class name="com.trello.qa.tests.BoardModificationTests"/>
-            <class name="com.trello.qa.tests.TeamModificationTests"/>
 
         </classes>
     </test>

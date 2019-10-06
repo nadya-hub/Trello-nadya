@@ -1,7 +1,6 @@
 package com.trello.qa.tests;
 
 import com.trello.qa.model.BoardData;
-import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -54,22 +53,22 @@ public class BoardCreationTest extends TestBase {
             }
         }
 
-        @Test()
-        public void testBoardCreation() throws InterruptedException {
-            int before = app.getBoardHelper().getBoardsCount();
-            app.getTeamHelper().clickOnPlusButtonOnHeader();
-            app.getBoardHelper().selectCreateBoardFromDropDown();
-            String boardName ="Hope";
-            app.getBoardHelper().fillBoardCreationForm(new BoardData().withBoardName(boardName));
-            app.getBoardHelper().confirmBoardCreation();
-            app.getBoardHelper().returnToHome();
-            app.getSessionHelper().refreshPage();
-            int after = app.getBoardHelper().getBoardsCount();
-            Assert.assertEquals(after, before );
-
-            Assert.assertTrue(app.getSessionHelper().isUserLoggedIn());
-
-        }
+//        @Test()
+//        public void testBoardCreation() throws InterruptedException {
+//            int before = app.getBoardHelper().getBoardsCount();
+//            app.getTeamHelper().clickOnPlusButtonOnHeader();
+//            app.getBoardHelper().selectCreateBoardFromDropDown();
+//            String boardName ="Hope";
+//            app.getBoardHelper().fillBoardCreationForm(new BoardData().withBoardName(boardName));
+//            app.getBoardHelper().confirmBoardCreation();
+//            app.getBoardHelper().returnToHome();
+//            app.getSessionHelper().refreshPage();
+//            int after = app.getBoardHelper().getBoardsCount();
+//            Assert.assertEquals(after, before );
+//
+//            Assert.assertTrue(app.getSessionHelper().isUserLoggedIn());
+//
+//        }
         @Test(dataProvider ="validBoards")
     public void testBoardCreationWithDataProvider(String boardName) throws InterruptedException {
         BoardData board = new BoardData().withBoardName(boardName);
@@ -87,19 +86,19 @@ public class BoardCreationTest extends TestBase {
        // Assert.assertTrue(app.getSessionHelper().isUserLoggedIn());
 
     }
-    @Test(dataProvider ="validBoardsfromcsv")
-    public void testBoardCreationWithDataProviderFromcsv(BoardData board) throws InterruptedException {
-       // BoardData board = new BoardData().withBoardName(boardName);
-        int before = app.getBoardHelper().getBoardsCount();
-        app.getTeamHelper().clickOnPlusButtonOnHeader();
-        app.getBoardHelper().selectCreateBoardFromDropDown();
-        //String boardName ="Hope";
-        app.getBoardHelper().fillBoardCreationForm(board);
-        app.getBoardHelper().confirmBoardCreation();
-        app.getBoardHelper().returnToHome();
-        app.getSessionHelper().refreshPage();
-        int after = app.getBoardHelper().getBoardsCount();}
-   }
+//    @Test(dataProvider ="validBoardsfromcsv")
+//    public void testBoardCreationWithDataProviderFromcsv(BoardData board) throws InterruptedException {
+//       // BoardData board = new BoardData().withBoardName(boardName);
+//        int before = app.getBoardHelper().getBoardsCount();
+//        app.getTeamHelper().clickOnPlusButtonOnHeader();
+//        app.getBoardHelper().selectCreateBoardFromDropDown();
+//        //String boardName ="Hope";
+//        app.getBoardHelper().fillBoardCreationForm(board);
+//        app.getBoardHelper().confirmBoardCreation();
+//        app.getBoardHelper().returnToHome();
+//        app.getSessionHelper().refreshPage();
+//        int after = app.getBoardHelper().getBoardsCount();}
+ }
 
 
 

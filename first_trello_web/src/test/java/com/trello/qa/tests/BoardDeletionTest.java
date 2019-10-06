@@ -23,6 +23,7 @@ public class BoardDeletionTest extends TestBase {
         app.getBoardHelper().clickCloseBoard();
           Thread.sleep(3000);
         app.getBoardHelper().clickConfirmClose();
+          Thread.sleep(3000);
         app.getBoardHelper().clickPermanentlyDelete();
         app.getBoardHelper().returnToHome();
        before=app.getBoardHelper().getBoardsCount();}
