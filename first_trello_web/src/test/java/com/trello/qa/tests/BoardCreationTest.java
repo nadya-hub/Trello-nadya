@@ -1,6 +1,8 @@
 package com.trello.qa.tests;
 
 import com.trello.qa.model.BoardData;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -15,6 +17,17 @@ import java.util.Iterator;
 import java.util.List;
 
 public class BoardCreationTest extends TestBase {
+    Logger logger = LoggerFactory.getLogger(TestBase .class );
+//    @BeforeMethod
+//    public void startLogger(Method m, Object[]p){
+//        logger.info("Start  test "+m.getName()+" with parameters" + Arrays.asList(p));
+//
+//    }
+//
+//    @AfterMethod
+//    public void stopLogger(Method m){
+//        logger.info("Stop test "+ m.getName());
+//        System.out.println("------------"); }
     @DataProvider
     public Iterator<Object[]> validBoards(){
         List<Object[]> list = new ArrayList<>();
@@ -71,6 +84,7 @@ public class BoardCreationTest extends TestBase {
 //        }
         @Test(dataProvider ="validBoards")
     public void testBoardCreationWithDataProvider(String boardName) throws InterruptedException {
+ //       logger.info("");
         BoardData board = new BoardData().withBoardName(boardName);
         int before = app.getBoardHelper().getBoardsCount();
         app.getTeamHelper().clickOnPlusButtonOnHeader();

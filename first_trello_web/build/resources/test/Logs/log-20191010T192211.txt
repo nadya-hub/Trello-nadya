@@ -1,0 +1,75 @@
+19:22:21.687 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [href='/login']
+19:22:21.706 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [href='/login']found
+19:22:24.419 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [type=email]
+19:22:24.462 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+19:22:24.715 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [type=email]
+19:22:24.727 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+19:22:24.746 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [type=email]
+19:22:24.760 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+19:22:24.841 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [type=password]
+19:22:24.855 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=password]found
+19:22:25.089 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [type=password]
+19:22:25.127 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=password]found
+19:22:25.147 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [type=password]
+19:22:25.163 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=password]found
+19:22:25.204 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.id: login
+19:22:25.225 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.id: loginfound
+19:22:25.497 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-member-menu-button']
+19:22:25.734 [main] ERROR c.t.q.h.ApplicationManager$MyListener - Error
+org.openqa.selenium.WebDriverException: Failed to interpret value as array
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-G2K9F2C5', ip: '192.168.43.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190813150448, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 13064, moz:profile: C:\Users\leila\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 09d16bc6-4661-4e60-b078-c7738c654068
+*** Element info: {Using=css selector, value=[data-test-id='header-member-menu-button']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy10.findElements(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElements(EventFiringWebDriver.java:182)
+	at com.trello.qa.helpers.HelperBase.isElementPresent(HelperBase.java:40)
+	at com.trello.qa.helpers.HelperBase.isTherePersonalBoards(HelperBase.java:43)
+	at com.trello.qa.helpers.SessionHelper.isUserLoggedIn(SessionHelper.java:25)
+	at com.trello.qa.tests.BoardCreationTest.ensurePreconditionsLogin(BoardCreationTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)

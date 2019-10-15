@@ -1,0 +1,102 @@
+18:55:41.245 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [href='/login']
+18:55:41.273 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [href='/login']found
+18:55:43.850 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [type=email]
+18:55:43.905 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+18:55:44.137 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [type=email]
+18:55:44.158 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+18:55:44.182 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [type=email]
+18:55:44.193 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+18:55:44.244 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [type=password]
+18:55:44.251 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=password]found
+18:55:44.478 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [type=password]
+18:55:44.498 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=password]found
+18:55:44.523 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [type=password]
+18:55:44.542 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=password]found
+18:55:44.587 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.id: login
+18:55:44.601 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.id: loginfound
+18:55:44.908 [Test worker] INFO  com.trello.qa.tests.TestBase - Start  test testDeleteBoard with parameters[]
+18:55:44.909 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-member-menu-button']
+18:55:48.369 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-button']found
+18:55:56.372 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+18:55:56.411 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+18:55:56.411 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: div[class=board-tile-details-name]
+18:55:56.428 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: div[class=board-tile-details-name]found
+18:56:04.710 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[class='board-menu-navigation-item-link js-open-more']
+18:56:04.722 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-open-more']found
+18:56:09.981 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[class='board-menu-navigation-item-link js-close-board']
+18:56:09.993 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-close-board']found
+18:56:13.240 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: .js-confirm
+18:56:13.253 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: .js-confirmfound
+18:56:19.541 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[class='quiet js-delete']
+18:56:19.556 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='quiet js-delete']found
+18:56:19.816 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVV
+18:56:39.843 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+18:56:39.843 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[href='/']
+18:56:39.921 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+18:56:45.162 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+18:56:45.183 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+18:56:45.183 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: div[class=board-tile-details-name]
+18:56:45.200 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: div[class=board-tile-details-name]found
+18:56:53.453 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[class='board-menu-navigation-item-link js-open-more']
+18:56:53.464 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-open-more']found
+18:56:58.741 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[class='board-menu-navigation-item-link js-close-board']
+18:56:58.753 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-close-board']found
+18:57:02.017 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: .js-confirm
+18:57:02.031 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: .js-confirmfound
+18:57:08.317 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[class='quiet js-delete']
+18:57:08.326 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='quiet js-delete']found
+18:57:08.553 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVV
+18:57:28.567 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+18:57:28.568 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[href='/']
+18:57:28.582 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+18:57:33.854 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+18:57:33.958 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+18:57:33.959 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: div[class=board-tile-details-name]
+18:57:33.970 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: div[class=board-tile-details-name]found
+18:57:42.228 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[class='board-menu-navigation-item-link js-open-more']
+18:57:42.235 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-open-more']found
+18:57:47.465 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[class='board-menu-navigation-item-link js-close-board']
+18:57:47.480 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-close-board']found
+18:57:50.733 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: .js-confirm
+18:57:50.750 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: .js-confirmfound
+18:57:57.014 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[class='quiet js-delete']
+18:57:57.028 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='quiet js-delete']found
+18:57:57.306 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVV
+18:58:17.318 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+18:58:17.319 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[href='/']
+18:58:17.328 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+18:58:22.639 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+18:58:22.651 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+18:58:22.651 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: div[class=board-tile-details-name]
+18:58:22.664 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: div[class=board-tile-details-name]found
+18:58:30.934 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[class='board-menu-navigation-item-link js-open-more']
+18:58:30.943 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-open-more']found
+18:58:36.187 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[class='board-menu-navigation-item-link js-close-board']
+18:58:36.199 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-close-board']found
+18:58:39.450 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: .js-confirm
+18:58:39.464 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: .js-confirmfound
+18:58:45.729 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[class='quiet js-delete']
+18:58:45.745 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='quiet js-delete']found
+18:58:45.986 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVV
+18:59:06.003 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+18:59:06.003 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[href='/']
+18:59:06.018 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+18:59:11.315 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+18:59:11.333 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+18:59:11.334 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: div[class=board-tile-details-name]
+18:59:11.346 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: div[class=board-tile-details-name]found
+18:59:19.614 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[class='board-menu-navigation-item-link js-open-more']
+18:59:19.628 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-open-more']found
+18:59:24.893 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[class='board-menu-navigation-item-link js-close-board']
+18:59:24.908 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-close-board']found
+18:59:28.171 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: .js-confirm
+18:59:28.187 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: .js-confirmfound
+18:59:34.446 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[class='quiet js-delete']
+18:59:34.459 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='quiet js-delete']found
+18:59:34.689 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVV
+18:59:54.716 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+18:59:54.716 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: a[href='/']
+18:59:54.732 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+19:00:00.016 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+19:00:00.033 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+19:00:00.042 [Test worker] INFO  com.trello.qa.tests.TestBase - Stop test testDeleteBoard

@@ -1,7 +1,13 @@
 package com.trello.qa.helpers;
 
+import com.google.common.io.Files;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+
+import java.io.File;
+import java.io.IOException;
 
 public class HelperBase  {
     WebDriver driver;
@@ -36,6 +42,15 @@ public class HelperBase  {
     public boolean isTherePersonalBoards() {
         return isElementPresent(By.cssSelector("[data-test-id='header-member-menu-button']"));
     }
+    public void takeScreenshot(){
+        File tmp = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        File screen = new File("src/test/resources/Screenshots/screen "+System.currentTimeMillis()+".png");
+        try {
+            Files.copy(tmp,screen);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
+    }
 
 }

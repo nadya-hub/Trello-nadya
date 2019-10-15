@@ -17,7 +17,7 @@ public class BoardDeletionTest extends TestBase {
         int before = app.getBoardHelper().getBoardsCount();
       while(before>2){
           app.getBoardHelper().clickOnFirstPrivateBoard();
-        Thread.sleep(3000);
+          Thread.sleep(3000);
        // clickOnMoreButtonInBoardMenu();
        app.getBoardHelper().clickButtonMore();
         app.getBoardHelper().clickCloseBoard();

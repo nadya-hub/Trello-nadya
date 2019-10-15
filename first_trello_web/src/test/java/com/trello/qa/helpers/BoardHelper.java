@@ -78,6 +78,7 @@ public class BoardHelper extends HelperBase{
     public void clickConfirmClose() throws InterruptedException {
 
         click(By.cssSelector(".js-confirm"));
+        takeScreenshot();
           //click(By.cssSelector("input[class='js-confirm full negate']"));
       }
 

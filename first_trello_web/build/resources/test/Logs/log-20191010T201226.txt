@@ -1,0 +1,60 @@
+20:12:36.325 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [href='/login']found
+20:12:39.341 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+20:12:39.595 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+20:12:39.639 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+20:12:39.694 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=password]found
+20:12:39.942 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=password]found
+20:12:39.983 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=password]found
+20:12:40.035 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.id: loginfound
+20:12:40.333 [main] INFO  com.trello.qa.tests.TestBase - Start  test testDeleteBoard with parameters[]
+20:12:42.883 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-button']found
+20:12:50.926 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:12:50.943 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: div[class=board-tile-details-name]found
+20:12:59.222 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-open-more']found
+20:13:04.517 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-close-board']found
+20:13:07.793 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: .js-confirmfound
+20:13:14.209 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='quiet js-delete']found
+20:13:34.467 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+20:13:34.481 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:13:39.784 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:13:39.803 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: div[class=board-tile-details-name]found
+20:13:48.109 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-open-more']found
+20:13:53.424 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-close-board']found
+20:13:56.744 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: .js-confirmfound
+20:14:03.219 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='quiet js-delete']found
+20:14:23.484 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+20:14:23.493 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:14:28.777 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:14:28.784 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: div[class=board-tile-details-name]found
+20:14:37.047 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-open-more']found
+20:14:42.310 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-close-board']found
+20:14:45.585 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: .js-confirmfound
+20:14:51.963 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='quiet js-delete']found
+20:15:12.218 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+20:15:12.230 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:15:17.583 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:15:17.591 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: div[class=board-tile-details-name]found
+20:15:25.867 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-open-more']found
+20:15:31.144 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-close-board']found
+20:15:34.410 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: .js-confirmfound
+20:15:40.801 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='quiet js-delete']found
+20:16:01.055 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+20:16:01.068 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:16:06.395 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:16:06.407 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: div[class=board-tile-details-name]found
+20:16:14.722 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-open-more']found
+20:16:19.996 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-close-board']found
+20:16:23.254 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: .js-confirmfound
+20:16:29.634 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='quiet js-delete']found
+20:16:49.884 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+20:16:49.901 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:16:55.190 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:16:55.206 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: div[class=board-tile-details-name]found
+20:17:03.490 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-open-more']found
+20:17:08.824 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='board-menu-navigation-item-link js-close-board']found
+20:17:12.129 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: .js-confirmfound
+20:17:18.549 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[class='quiet js-delete']found
+20:17:38.805 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+20:17:38.823 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:17:44.182 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:17:44.182 [main] INFO  com.trello.qa.tests.TestBase - Stop test testDeleteBoard

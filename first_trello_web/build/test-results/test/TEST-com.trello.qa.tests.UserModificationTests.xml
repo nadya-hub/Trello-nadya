@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.trello.qa.tests.UserModificationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-15T12:45:06" hostname="LAPTOP-G2K9F2C5" time="15.838">
+  <properties/>
+  <testcase name="changeAvatarTest" classname="com.trello.qa.tests.UserModificationTests" time="15.838"/>
+  <system-out><![CDATA[15:45:06.852 [Test worker] INFO  com.trello.qa.tests.TestBase - Start  test changeAvatarTest with parameters[]
+15:45:11.870 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-button']found
+15:45:12.171 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-profile']found
+15:45:22.474 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: .rsiNque2CCqtPEfound
+15:45:22.659 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.name: filefound
+15:45:22.690 [Test worker] INFO  com.trello.qa.tests.TestBase - Stop test changeAvatarTest
+------------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Trello-nadya.iml" filepath="$PROJECT_DIR$/.idea/Trello-nadya.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/first_trello_web.iml" filepath="$PROJECT_DIR$/.idea/modules/first_trello_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/first_trello_web.main.iml" filepath="$PROJECT_DIR$/.idea/modules/first_trello_web.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/first_trello_web.test.iml" filepath="$PROJECT_DIR$/.idea/modules/first_trello_web.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nadya.first_trello_web.main.iml" filepath="$PROJECT_DIR$/.idea/modules/nadya.first_trello_web.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nadya.first_trello_web.test.iml" filepath="$PROJECT_DIR$/.idea/modules/nadya.first_trello_web.test.iml" />
     </modules>
   </component>
 </project>
