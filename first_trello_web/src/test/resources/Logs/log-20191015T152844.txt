@@ -6,7 +6,7 @@
 15:28:54.936 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=password]found
 15:28:54.983 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=password]found
 15:28:55.036 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.id: loginfound
-15:28:55.322 [Test worker] INFO  com.trello.qa.tests.TestBase - Start  test changeAvatarTest with parameters[]
+15:28:55.322 [Test worker] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Start  test changeAvatarTest with parameters[]
 15:29:00.565 [Test worker] ERROR c.t.q.h.ApplicationManager$MyListener - ERROR
 org.openqa.selenium.InvalidSelectorException: Given css selector expression "data-test-id='header-member-menu-button'" is invalid: InvalidSelectorError: 'data-test-id='header-member-menu-button'' is not a valid selector: "data-test-id='header-member-menu-button'"
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
@@ -94,4 +94,4 @@ Session ID: 86f28abc-9bd7-47aa-82ad-52e2e175ebd5
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.lang.Thread.run(Thread.java:748)
 15:29:00.569 [Test worker] ERROR c.t.q.h.ApplicationManager$MyListener - screenshotsrc\test\resources\Screenshots\screen 1571142540549.png
-15:29:00.573 [Test worker] INFO  com.trello.qa.tests.TestBase - Stop test changeAvatarTest
+15:29:00.573 [Test worker] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Stop test changeAvatarTest

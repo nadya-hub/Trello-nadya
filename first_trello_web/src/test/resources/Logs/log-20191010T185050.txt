@@ -18,7 +18,7 @@
 18:51:07.630 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-button']found
 18:51:07.650 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-member-menu-button']
 18:51:07.749 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-button']found
-18:51:07.753 [main] INFO  com.trello.qa.tests.TestBase - Start  test testBoardCreationWithDataProvider with parameters[Hello]
+18:51:07.753 [main] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Start  test testBoardCreationWithDataProvider with parameters[Hello]
 18:51:12.756 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
 18:51:19.339 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
 18:51:19.340 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-menu-button']
@@ -104,10 +104,10 @@ Session ID: ad592ada-541d-4c87-9459-2035b542941f
 18:51:22.146 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
 18:51:46.696 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
 18:51:46.722 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
-18:51:46.729 [main] INFO  com.trello.qa.tests.TestBase - Stop test testBoardCreationWithDataProvider
+18:51:46.729 [main] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Stop test testBoardCreationWithDataProvider
 18:51:46.732 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-member-menu-button']
 18:51:46.748 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-button']found
-18:51:46.748 [main] INFO  com.trello.qa.tests.TestBase - Start  test testBoardCreationWithDataProvider with parameters[34567]
+18:51:46.748 [main] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Start  test testBoardCreationWithDataProvider with parameters[34567]
 18:51:51.752 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
 18:51:51.774 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
 18:51:51.774 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-menu-button']
@@ -193,10 +193,10 @@ Session ID: ad592ada-541d-4c87-9459-2035b542941f
 18:51:55.456 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
 18:52:09.164 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
 18:52:09.198 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
-18:52:09.199 [main] INFO  com.trello.qa.tests.TestBase - Stop test testBoardCreationWithDataProvider
+18:52:09.199 [main] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Stop test testBoardCreationWithDataProvider
 18:52:09.202 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-member-menu-button']
 18:52:09.216 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-button']found
-18:52:09.217 [main] INFO  com.trello.qa.tests.TestBase - Start  test testBoardCreationWithDataProvider with parameters[@%&*]
+18:52:09.217 [main] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Start  test testBoardCreationWithDataProvider with parameters[@%&*]
 18:52:14.219 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
 18:52:14.244 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
 18:52:14.244 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-menu-button']
@@ -282,10 +282,10 @@ Session ID: ad592ada-541d-4c87-9459-2035b542941f
 18:52:17.359 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
 18:52:30.676 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
 18:52:30.819 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
-18:52:30.821 [main] INFO  com.trello.qa.tests.TestBase - Stop test testBoardCreationWithDataProvider
+18:52:30.821 [main] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Stop test testBoardCreationWithDataProvider
 18:52:30.821 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-member-menu-button']
 18:52:30.831 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-button']found
-18:52:30.832 [main] INFO  com.trello.qa.tests.TestBase - Start  test testBoardCreationWithDataProvider with parameters[TWO]
+18:52:30.832 [main] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Start  test testBoardCreationWithDataProvider with parameters[TWO]
 18:52:35.835 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
 18:52:35.865 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
 18:52:35.867 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-menu-button']
@@ -371,10 +371,10 @@ Session ID: ad592ada-541d-4c87-9459-2035b542941f
 18:52:39.068 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
 18:52:56.582 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
 18:52:56.674 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
-18:52:56.675 [main] INFO  com.trello.qa.tests.TestBase - Stop test testBoardCreationWithDataProvider
+18:52:56.675 [main] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Stop test testBoardCreationWithDataProvider
 18:52:56.675 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-member-menu-button']
 18:52:56.687 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-button']found
-18:52:56.688 [main] INFO  com.trello.qa.tests.TestBase - Start  test testBoardCreationWithDataProvider with parameters[4]
+18:52:56.688 [main] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Start  test testBoardCreationWithDataProvider with parameters[4]
 18:53:01.692 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
 18:53:01.714 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
 18:53:01.714 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-menu-button']
@@ -460,4 +460,4 @@ Session ID: ad592ada-541d-4c87-9459-2035b542941f
 18:53:04.632 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
 18:53:18.320 [main] INFO  c.t.q.h.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
 18:53:18.486 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
-18:53:18.487 [main] INFO  com.trello.qa.tests.TestBase - Stop test testBoardCreationWithDataProvider
+18:53:18.487 [main] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Stop test testBoardCreationWithDataProvider

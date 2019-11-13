@@ -6,7 +6,7 @@
 15:44:12.487 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=password]found
 15:44:12.499 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=password]found
 15:44:12.518 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.id: loginfound
-15:44:12.768 [Test worker] INFO  com.trello.qa.tests.TestBase - Start  test changeAvatarTest with parameters[]
+15:44:12.768 [Test worker] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Start  test changeAvatarTest with parameters[]
 15:44:17.776 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-button']found
 15:44:18.036 [Test worker] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-profile']found
 15:44:28.413 [Test worker] ERROR c.t.q.h.ApplicationManager$MyListener - ERROR
@@ -95,4 +95,4 @@ Session ID: 2100a2ae-1409-4bdf-87ed-38166cc07d03
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.lang.Thread.run(Thread.java:748)
 15:44:28.416 [Test worker] ERROR c.t.q.h.ApplicationManager$MyListener - screenshotsrc\test\resources\Screenshots\screen 1571143468400.png
-15:44:28.419 [Test worker] INFO  com.trello.qa.tests.TestBase - Stop test changeAvatarTest
+15:44:28.419 [Test worker] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Stop test changeAvatarTest

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.trello.qa.tests.OpenAppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-13T07:52:09" hostname="LAPTOP-G2K9F2C5" time="0.002">
+  <properties/>
+  <testcase name="openAppTest" classname="com.trello.qa.tests.OpenAppTest" time="0.002"/>
+  <system-out><![CDATA[App opened
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

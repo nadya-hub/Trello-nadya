@@ -7,7 +7,7 @@
 20:06:39.583 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [type=password]found
 20:06:39.646 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.id: loginfound
 20:06:42.258 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-button']found
-20:06:42.283 [main] INFO  com.trello.qa.tests.TestBase - Start  test testBoardCreationWithDataProvider with parameters[Hello]
+20:06:42.283 [main] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Start  test testBoardCreationWithDataProvider with parameters[Hello]
 20:06:42.386 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-button']found
 20:06:47.404 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
 20:06:47.418 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-create-menu-button']found
@@ -81,8 +81,8 @@ Session ID: 2f2253b1-cfc2-4a7e-aaa7-9a01d080186e
 20:06:49.864 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
 20:06:50.164 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
 20:07:17.208 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
-20:07:17.212 [main] INFO  com.trello.qa.tests.TestBase - Stop test testBoardCreationWithDataProvider
-20:07:17.216 [main] INFO  com.trello.qa.tests.TestBase - Start  test testBoardCreationWithDataProvider with parameters[34567]
+20:07:17.212 [main] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Stop test testBoardCreationWithDataProvider
+20:07:17.216 [main] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Start  test testBoardCreationWithDataProvider with parameters[34567]
 20:07:17.228 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-button']found
 20:07:22.415 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
 20:07:22.427 [main] INFO  c.t.q.h.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-create-menu-button']found
@@ -213,8 +213,8 @@ Session ID: 2f2253b1-cfc2-4a7e-aaa7-9a01d080186e
 	at org.testng.TestNG.run(TestNG.java:1000)
 	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
 	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-20:07:38.850 [main] INFO  com.trello.qa.tests.TestBase - Stop test testBoardCreationWithDataProvider
-20:07:38.851 [main] INFO  com.trello.qa.tests.TestBase - Start  test testBoardCreationWithDataProvider with parameters[@%&*]
+20:07:38.850 [main] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Stop test testBoardCreationWithDataProvider
+20:07:38.851 [main] INFO  com.trello.qa.tests.com.trello.qa.tests.OpenAppTest.TestBase - Start  test testBoardCreationWithDataProvider with parameters[@%&*]
 20:07:38.858 [main] ERROR c.t.q.h.ApplicationManager$MyListener - Error
 org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
