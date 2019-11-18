@@ -1,14 +1,21 @@
 package com.trello.qa.helpers;
 
 import com.trello.qa.model.TeamData;
+import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 public class TeamHelper extends HelperBase{
+
+    public TeamHelper(AppiumDriver driver) {
+        super(driver);
+    }
 
     public TeamHelper(WebDriver driver) {
         super(driver);
     }
+
     public void clickContinueButton() {
         click(By.cssSelector("[type=submit]"));
     }

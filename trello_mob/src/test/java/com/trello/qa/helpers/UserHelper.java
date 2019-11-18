@@ -1,15 +1,15 @@
 package com.trello.qa;
 
+import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import java.io.File;
 
-public class UserHelper extends HelperBase {
+public class UserHelper extends com.trello.qa.HelperBase {
 
 
-    public UserHelper(WebDriver driver) {
+    public UserHelper(AppiumDriver driver) {
         super(driver);
     }
 

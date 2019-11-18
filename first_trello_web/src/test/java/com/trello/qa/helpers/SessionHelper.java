@@ -1,12 +1,13 @@
 package com.trello.qa.helpers;
 
+import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SessionHelper extends HelperBase {
-    public SessionHelper(WebDriver driver) {
+    public SessionHelper(EventFiringWebDriver driver) {
         super(driver);
     }
 

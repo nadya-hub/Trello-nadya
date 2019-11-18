@@ -12,7 +12,7 @@ public class TestBase {
 
     @BeforeSuite
 
-    public void setUp() throws MalformedURLException {
+    public void setUp() throws MalformedURLException, InterruptedException {
         app.init();
 
     }

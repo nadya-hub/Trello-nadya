@@ -1,15 +1,13 @@
-package com.trello.qa;
+package com.trello.qa.helpers;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import com.trello.qa.model.BoardData;
+import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
-public class BoardHelper extends HelperBase{
+public class BoardHelper extends com.trello.qa.HelperBase {
 
-    public BoardHelper(WebDriver driver) {
+    public BoardHelper(AppiumDriver driver) {
         super(driver);
     }
 
@@ -18,8 +16,8 @@ public class BoardHelper extends HelperBase{
 //        click(By.cssSelector("a[href='/']"));}
     public void returnToHome() {
         if(isElementPresent(By.cssSelector("._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVV"))){
-            new WebDriverWait(driver, 15)
-                    .until(ExpectedConditions.stalenessOf(driver.findElement(By.cssSelector("._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVV"))));
+           // new WebDriverWait(driver, 15)
+                    //.until(ExpectedConditions.stalenessOf(driver.findElement(By.cssSelector("._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVV"))));
             click(By.cssSelector("a[href='/']"));
             click(By.cssSelector("a[href='/']"));
         } else
@@ -134,14 +132,12 @@ public class BoardHelper extends HelperBase{
        returnToHome();
        refreshPage();
     }
+//??_____________________________
+    public void clickOnPlusButton() {
+        click(By.id("add_fab"));
+
+    }
 
 
 
-//    public void initChangeBoard() {
-//        WebElement nameField = driver.findElement(By.cssSelector(".js-rename-board"));
-//        new Actions(driver).moveToElement(nameField).click().perform();
-//        type(By.cssSelector("input.js-board-name-input"),"one");
-//        driver.findElement(By.cssSelector("input.js-board-name-input")).sendKeys(Keys.ENTER);
-
-   // }
 }

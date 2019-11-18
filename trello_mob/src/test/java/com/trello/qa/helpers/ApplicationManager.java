@@ -1,7 +1,5 @@
 package com.trello.qa.helpers;
 
-import com.trello.qa.BoardHelper;
-import com.trello.qa.SessionHelper;
 import com.trello.qa.TeamHelper;
 import com.trello.qa.UserHelper;
 import io.appium.java_client.AppiumDriver;
@@ -17,7 +15,7 @@ public class ApplicationManager {
     SessionHelper sessionHelper;
     UserHelper userHelper;
 
-    public void init() throws MalformedURLException {
+    public void init() throws MalformedURLException, InterruptedException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("deviceName", "Nexus");

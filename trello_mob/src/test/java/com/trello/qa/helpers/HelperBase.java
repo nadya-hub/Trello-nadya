@@ -1,18 +1,18 @@
 package com.trello.qa;
 
 import com.google.common.io.Files;
+import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 
 import java.io.File;
 import java.io.IOException;
 
 public class HelperBase  {
-    WebDriver driver;
+   public AppiumDriver driver;
 
-    public HelperBase(WebDriver driver) {
+    public HelperBase(AppiumDriver driver) {
         this.driver = driver;
     }
 
